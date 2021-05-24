@@ -1,10 +1,10 @@
-version: '1.0'
+version: '2.1'
 services:
   cookiesWorld_ServerInfo:
     build: .
-    image: cookiesWorld/cookiesWorld_ServerInfo
+    image: cookiesworld/serverinfo
     hostname: www.kuckelsberg.de
-    config: cookiesWorld_ServerInfo
+    container_name: cookiesWorld_ServerInfo
     restart: always
     ports:
       - 4713:4713
