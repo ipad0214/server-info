@@ -9,7 +9,7 @@ export class Logger {
   public writeUsernameToLog(obj: any) {
     let json: any = this.loadContentFromFile();
     obj.timestamp = new Date();
-    json.users.push(timeStamp);
+    json.users.push(obj);
     this.writeToFile(JSON.stringify(json));
   }
 

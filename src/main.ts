@@ -15,7 +15,7 @@ async function bootstrap() {
     users: [],
   });
 
-  fs.writeFile('user.json', data, (err) => {
+  fs.writeFile('usernames.json', data, (err) => {
     if (err) {
       throw err;
     }
